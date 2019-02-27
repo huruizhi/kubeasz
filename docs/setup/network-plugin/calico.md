@@ -13,7 +13,6 @@ roles/calico/
 └── templates
     ├── calico-csr.json.j2
     ├── calicoctl.cfg.j2
-    ├── calico-rbac.yaml.j2
     └── calico.yaml.j2
 ```
 请在另外窗口打开[roles/calico/tasks/main.yml](../roles/calico/tasks/main.yml) 文件，对照看以下讲解内容。
@@ -164,3 +163,4 @@ ETCDCTL_API=3 etcdctl --endpoints="http://127.0.0.1:2379" get --prefix /calico/i
 etcdctl --endpoints=http://127.0.0.1:2379 --ca-file=/etc/kubernetes/ssl/ca.pem ls /calico
 ```
 
+## 下一步：[设置 BGP Route Reflector](calico-bgp-rr.md)
